@@ -1,4 +1,12 @@
 <resources>
     <string name="app_name">TouristApp</string>
-    <string name="description_casttle_lublin">Początki zamku związane są z powstaniem w XII wieku kasztelanii lubelskiej. Za czasów Kazimierza Sprawiedliwego został wzniesiony na wzgórzu gród umocniony drewniano-ziemnym wałem. W pierwszej połowie XIII w. w obrębie górnej części zamku wybudowano murowaną wieżę obronno-rezydencjonalną (donżon, stołp). Jest to cenny zabytek sztuki romańskiej zachowany do dzisiaj. Wieża utwierdziła lokalizację średniowiecznego założenia i dała początek murowanej zabudowie zamku. W XIV wieku, za panowania Kazimierza Wielkiego, wzniesiono murowany zamek otoczony murem obronnym. Wówczas też, najprawdopodobniej, powstał gotycki kościół zamkowy pod wezwaniem Trójcy Świętej, który pełnił funkcję kaplicy królewskiej. Z fundacji Władysława Jagiełły gotyckie wnętrza kaplicy pokryto malowidłami bizantyńsko-ruskimi. Prace ukończono w 1418 roku. Dzięki malowidłom, zachowanym do czasów współczesnych, Kaplica Trójcy Św. stanowi wybitny zabytek w skali międzynarodowej.</string>
+    <string name="description_casttle_lublin">Początki zamku związane są z powstaniem w XII wieku kasztelanii lubelskiej.
+        Za czasów Kazimierza Sprawiedliwego został wzniesiony na wzgórzu gród umocniony drewniano-ziemnym wałem.
+        W pierwszej połowie XIII w. w obrębie górnej części zamku wybudowano murowaną wieżę obronno-rezydencjonalną (donżon, stołp).
+        Jest to cenny zabytek sztuki romańskiej zachowany do dzisiaj.
+        Wieża utwierdziła lokalizację średniowiecznego założenia i dała początek murowanej zabudowie zamku. W XIV wieku, za panowania Kazimierza Wielkiego, wzniesiono murowany zamek otoczony murem obronnym.\n
+        Wówczas też, najprawdopodobniej, powstał gotycki kościół zamkowy pod wezwaniem Trójcy Świętej, który pełnił funkcję kaplicy królewskiej.\n
+        Z fundacji Władysława Jagiełły gotyckie wnętrza kaplicy pokryto malowidłami bizantyńsko-ruskimi. Prace ukończono w 1418 roku.
+        Dzięki malowidłom, zachowanym do czasów współczesnych, Kaplica Trójcy Św. stanowi wybitny zabytek w skali międzynarodowej.</string>
+    <string name="contact_data">telefon  e-mail www:</string>
 </resources>

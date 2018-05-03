@@ -4,30 +4,85 @@
     android:layout_height="match_parent"
     android:fillViewport="true">
 
-    <LinearLayout
+    <RelativeLayout
         android:id="@+id/list_item_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
         <ImageView
+            android:id="@+id/list_item_image_view"
             android:layout_width="match_parent"
             android:layout_height="180dp"
-            android:src="@drawable/zameklubelski"
-            android:scaleType="fitXY"/>
-
+            android:scaleType="fitXY"
+            android:src="@drawable/zameklubelski" />
 
         <TextView
-            android:id="@+id/list_item_header"
-            android:layout_width="match_parent"
+            android:id="@+id/list_item_element_name"
+            android:layout_alignStart="@id/list_item_image_view"
+            android:layout_alignBottom="@id/list_item_image_view"
+            android:text="Zamek Lubelski"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:layout_margin="16sp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content" />
-        <TextView
+
+        <LinearLayout
+            android:layout_below="@id/list_item_image_view"
+            android:id="@+id/list_item_inner_1.1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="48dp"
-            android:layout_marginStart="48dp"
-            android:text="@string/description_casttle_lublin" />
+            android:orientation="vertical">
 
-    </LinearLayout>
+            <TextView
+                android:id="@+id/header_description"
+                style="@style/list_item_header"
+                android:text="description" />
+
+            <TextView
+                style="@style/ordinaryText"
+                android:text="@string/description_casttle_lublin" />
+
+            <TextView
+                android:id="@+id/header_contact"
+                style="@style/list_item_header"
+                android:text="contact" />
+
+            <ImageView
+                style="@style/ordinaryText"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_phone_black_24dp" />
+
+            <TextView
+                style="@style/ordinaryText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="+48-999-999-493" />
+
+            <ImageView
+                style="@style/ordinaryText"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/webcion" />
+
+            <TextView
+                style="@style/ordinaryText"
+                android:text="www.default.pl" />
+
+            <ImageView
+                style="@style/ordinaryText"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_email_black_24dp" />
+
+            <TextView
+                style="@style/ordinaryText"
+                android:text="default@default.pl" />
+
+        </LinearLayout>
+    </RelativeLayout>
 
 </ScrollView>
