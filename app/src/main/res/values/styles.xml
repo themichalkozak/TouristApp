@@ -25,4 +25,12 @@
         <item name="android:layout_marginEnd">16dp</item>
     </style>
 
+    <style name="list_text_view">
+        <item name="android:layout_height">@dimen/list_item_height</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_alignBottom">@id/list_item_image_view</item>
+        <item name="android:layout_alignStart">@id/list_item_image_view</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
 </resources>
