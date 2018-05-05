@@ -28,8 +28,10 @@
     <style name="list_text_view">
         <item name="android:layout_height">@dimen/list_item_height</item>
         <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_alignBottom">@id/list_item_image_view</item>
-        <item name="android:layout_alignStart">@id/list_item_image_view</item>
+        <item name="android:gravity">bottom</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textAllCaps">true</item>
         <item name="android:textSize">16sp</item>
     </style>
 
