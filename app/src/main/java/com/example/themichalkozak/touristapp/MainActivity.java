@@ -12,16 +12,16 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.item_layout);
+        setContentView(R.layout.activity_main);
 
 
-        ImageView textView = findViewById(R.id.list_item_image_view);
-        textView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,HistoricalTreasure.class);
-                startActivity(intent);
-            }
-        });
-    }
+//    ImageView textView = findViewById(R.id.list_item_image_view);
+//        textView.setOnClickListener(new View.OnClickListener() {
+//        @Override
+//        public void onClick(View v) {
+//            Intent intent = new Intent(MainActivity.this,HistoricalTreasure.class);
+//            startActivity(intent);
+//        }
+//    });
+}
 }
