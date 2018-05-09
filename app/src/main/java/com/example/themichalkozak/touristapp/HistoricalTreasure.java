@@ -16,7 +16,7 @@ public class HistoricalTreasure extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.list_item);
 
-        listElements.add(new ListElements("Zamek",R.drawable.zameklubelski,"opis","+48-333","www.teatrnn.pl","teatrnn@gmail.com"));
+        listElements.add(new ListElements("Zamek",R.drawable.lublin_2,"opis","+48-333","www.teatrnn.pl","teatrnn@gmail.com"));
 
         ElementAdapter adapter = new ElementAdapter(HistoricalTreasure.this,listElements);
 
