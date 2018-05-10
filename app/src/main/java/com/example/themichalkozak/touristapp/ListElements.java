@@ -22,6 +22,11 @@ public class ListElements {
         this.eMail = eMail;
     }
 
+    public ListElements(String mName, int mImageResourceId) {
+        this.mName = mName;
+        this.mImageResourceId = mImageResourceId;
+    }
+
     public String getmName() {
         return mName;
     }

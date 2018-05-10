@@ -1,21 +1,27 @@
 package com.example.themichalkozak.touristapp;
 
+
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
 import android.view.View;
 import android.widget.ImageView;
-import android.widget.TextView;
+
 import android.widget.ViewFlipper;
+
+import com.example.themichalkozak.touristapp.dummy.Fragments.AtractionFragment;
 
 public class MainActivity extends AppCompatActivity {
 
     ViewFlipper imgFlipper;
+    View.OnClickListener onClickListenerToList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
 
         int sliders[] = {
                 R.drawable.lublin,
@@ -31,9 +37,17 @@ public class MainActivity extends AppCompatActivity {
         for (int slide : sliders) {
             sliderFlipper(slide);
         }
+
+        findViewById(R.id.main_atraction).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, ListActivity.class);
+                startActivity(i);
+            }
+        });
     }
 
-public void sliderFlipper (int image){
+    public void sliderFlipper(int image) {
 
         ImageView imageView = new ImageView(this);
         imageView.setBackgroundResource(image);
@@ -41,7 +55,9 @@ public void sliderFlipper (int image){
         imgFlipper.addView(imageView);
         imgFlipper.setFlipInterval(4000);
         imgFlipper.setAutoStart(true);
-        imgFlipper.setInAnimation(this,android.R.anim.fade_in);
-        imgFlipper.setOutAnimation(this,android.R.anim.fade_out);
-}
+        imgFlipper.setInAnimation(this, android.R.anim.fade_in);
+        imgFlipper.setOutAnimation(this, android.R.anim.fade_out);
+    }
+
+
 }
