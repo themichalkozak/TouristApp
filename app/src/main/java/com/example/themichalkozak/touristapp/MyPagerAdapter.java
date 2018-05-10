@@ -19,6 +19,8 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
         super(fm);
     }
 
+    private String tabTitles[] = new String[] { "Atraction", "Hotel", "Historical Place","Restaurant" };
+
     @Override
     public int getCount() {
         return 4;
@@ -38,5 +40,9 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
             default:
                 return null;
         }
+    }
+
+    public CharSequence getPageTitle(int position){
+        return tabTitles[position];
     }
 }
