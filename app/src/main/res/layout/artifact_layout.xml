@@ -6,10 +6,24 @@
     android:orientation="vertical">
 
 
-    <TextView
+
+    <ImageView
         style="@style/list_text_view"
-        android:id="@+id/list_item_element_name"
+        android:id="@+id/list_item_element_image"
         android:text="@string/default_text"/>
+
+    <TextView
+        android:layout_alignBottom="@+id/list_item_element_name"
+        android:layout_width="match_parent"
+        android:background="#80999999"
+        android:layout_height="60dp" />
+
+    <TextView
+        android:id="@+id/list_item_element_name"
+        android:layout_alignBottom="@+id/list_item_element_image"
+        style="@style/list_text_view" />
+
+
 
 
 

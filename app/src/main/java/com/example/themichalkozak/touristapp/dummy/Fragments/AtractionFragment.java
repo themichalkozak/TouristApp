@@ -2,8 +2,10 @@ package com.example.themichalkozak.touristapp.dummy.Fragments;
 
 
 
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -49,11 +51,26 @@ public class AtractionFragment extends Fragment {
 
         ArrayList<ListElements> listElements = new ArrayList<>();
 
-        for(int i=0;i<10;i++) {
 
-            listElements.add(new ListElements("Zamek", R.drawable.lublin_2));
-            listElements.add(new ListElements("Zamek", R.drawable.lublin_3));
+        TypedArray imgs = getResources().obtainTypedArray(R.array.atractionDrawableId);
+
+        int lenImageArray = imgs.length();
+
+        int attractionArray []= new int [lenImageArray];
+        String attractionNameArray [] = getResources().getStringArray(R.array.attractionName);
+
+        for (int i=0;i<lenImageArray;i++){
+            attractionArray[i] = imgs.getResourceId(i,0);
         }
+        imgs.recycle();
+
+
+        for(int i=0;i<attractionArray.length;i++) {
+
+            listElements.add(new ListElements(attractionNameArray[i],attractionArray[i]));
+            Log.i("Resource", ""+ attractionArray[i]);
+        }
+
 
         ElementAdapter elementAdapter  = new ElementAdapter(getActivity(),listElements);
 

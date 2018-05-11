@@ -19,7 +19,7 @@ public class MyPagerAdapter extends FragmentPagerAdapter {
         super(fm);
     }
 
-    private String tabTitles[] = new String[] { "Atraction", "Hotel", "Historical Place","Restaurant" };
+    private String tabTitles[] = new String[] { "Atraction", "Historical Place", "Hotel","Restaurant" };
 
     @Override
     public int getCount() {

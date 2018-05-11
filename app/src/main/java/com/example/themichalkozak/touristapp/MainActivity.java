@@ -24,12 +24,10 @@ public class MainActivity extends AppCompatActivity {
 
 
         int sliders[] = {
-                R.drawable.lublin,
                 R.drawable.lublin_2,
                 R.drawable.lublin_3,
                 R.drawable.lublin_4,
                 R.drawable.lublin_5,
-                R.drawable.lublin_6
         };
 
         imgFlipper = findViewById(R.id.flipper_img);

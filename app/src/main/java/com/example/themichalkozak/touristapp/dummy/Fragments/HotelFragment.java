@@ -1,5 +1,6 @@
 package com.example.themichalkozak.touristapp.dummy.Fragments;
 
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -46,16 +47,23 @@ public class HotelFragment extends Fragment {
                              Bundle savedInstanceState) {
 
 
-
         View rootView = inflater.inflate(R.layout.list_item,container,false);
 
         ArrayList<ListElements> listElements = new ArrayList<>();
 
-        for(int i=0;i<10;i++) {
+        String hotelName [] = getResources().getStringArray(R.array.hotelName);
 
-            listElements.add(new ListElements("Zamek", R.drawable.lublin_2));
-            listElements.add(new ListElements("Elod",R.drawable.lublin));
+        TypedArray imgs = getResources().obtainTypedArray(R.array.hotelDrawableId);
+        int lenDrawableId = imgs.length();
+
+        int hotelDrawableId [] = new int [lenDrawableId];
+
+        for (int i=0;i<lenDrawableId;i++){
+            hotelDrawableId [i] = imgs.getResourceId(i,0);
+            listElements.add(new ListElements(hotelName[i],hotelDrawableId[i]));
         }
+
+        imgs.recycle();
 
         ElementAdapter elementAdapter  = new ElementAdapter(getActivity(),listElements);
 

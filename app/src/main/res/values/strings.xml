@@ -14,4 +14,77 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="aqua">Aqua Lublin</string>
+    <string name="fontanna">Fontanna multimedialna</string>
+    <string name="ski_globus">Ski Gobus</string>
+    <string name="carnaval">Carnaval Sztukmistrzów</string>
+    <string name="maraton">Maraton Lubelski</string>
+    <string name="mks">SPR Lublin SSA</string>
+    <string name="noc_kultury">Noc Kultury</string>
+    <string name="wrotkarnia">Skate Town</string>
+    <string name="sloneczny_wrotkow">Słoneczny Wrotków</string>
+
+    <string name="agit">Hotel Agit</string>
+    <string name="alter">Hotel Alter</string>
+    <string name="browar_lwow">Hotel Browar Lwów</string>
+    <string name="campanille">Hotel Campanille</string>
+    <string name="europa">Hotel Europa</string>
+    <string name="grodzka_20">Hotel Grodzka 20</string>
+    <string name="grand_hotel">Grand Hotel Lublinianka</string>
+    <string name="illan">Hotel Illan</string>
+    <string name="vanilla">Hotel Vanilla</string>
+    <string name="wieniawski">Hotel Wieniawski</string>
+
+    <string name="zamek">Zamek Lubelski</string>
+    <string name="dzon">Dżon</string>
+    <string name="trasa_podziemna">Trasa podziemna</string>
+    <string name="piwnica_pod_fortuna">Piwnica pod fortuną</string>
+    <string name="stare_miasto">Stare Miasto</string>
+    <string name="plac_litewski">Plac Litewski</string>
+    <string name="brama_krakowska">Brama Krakowska</string>
+    <string name="wieza_trynitarska">Wieża Trynitarska</string>
+    <string name="ogrod_saski">Ogród Saski</string>
+    <string name="muzeum_wsi">Muzeum Wsi Lubelskiej</string>
+
+    <string-array name="attractionName">
+        <item>@string/aqua</item>
+        <item>@string/fontanna</item>
+        <item>@string/ski_globus</item>
+        <item>@string/carnaval</item>
+        <item>@string/maraton</item>
+        <item>@string/mks</item>
+        <item>@string/noc_kultury</item>
+        <item>@string/wrotkarnia</item>
+        <item>@string/sloneczny_wrotkow</item>
+        <item>@string/fontanna</item>
+
+    </string-array>
+
+    <string-array name="hotelName">
+        <item>@string/agit</item>
+        <item>@string/alter</item>
+        <item>@string/browar_lwow</item>
+        <item>@string/campanille</item>
+        <item>@string/europa</item>
+        <item>@string/grodzka_20</item>
+        <item>@string/grand_hotel</item>
+        <item>@string/illan</item>
+        <item>@string/vanilla</item>
+        <item>@string/wieniawski</item>
+
+    </string-array>
+
+    <string-array name="historicalObjectName">
+        <item>@string/zamek</item>
+        <item>@string/dzon</item>
+        <item>@string/trasa_podziemna</item>
+        <item>@string/piwnica_pod_fortuna</item>
+        <item>@string/stare_miasto</item>
+        <item>@string/plac_litewski</item>
+        <item>@string/brama_krakowska</item>
+        <item>@string/wieza_trynitarska</item>
+        <item>@string/ogrod_saski</item>
+        <item>@string/muzeum_wsi</item>
+
+    </string-array>
 </resources>

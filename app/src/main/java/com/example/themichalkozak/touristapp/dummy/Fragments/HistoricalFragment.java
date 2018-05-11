@@ -1,6 +1,7 @@
 package com.example.themichalkozak.touristapp.dummy.Fragments;
 
 import android.content.Context;
+import android.content.res.TypedArray;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -55,10 +56,20 @@ public class HistoricalFragment extends Fragment {
 
         ArrayList<ListElements> listElements = new ArrayList<>();
 
-        for(int i=0;i<10;i++) {
+        String historicalArray [] = getResources().getStringArray(R.array.historicalObjectName);
 
-            listElements.add(new ListElements("Zamek", R.drawable.lublin_2));
+        TypedArray imgs = getResources().obtainTypedArray(R.array.historicalObject);
+        int lenDrawableArray = imgs.length();
+
+        int historicalDrawableId  [] = new int [lenDrawableArray];
+
+
+        for(int i=0;i<lenDrawableArray;i++) {
+
+            historicalDrawableId [i] = imgs.getResourceId(i,0);
+            listElements.add(new ListElements(historicalArray[i],historicalDrawableId[i]));
         }
+        imgs.recycle();
 
         ElementAdapter elementAdapter  = new ElementAdapter(getActivity(),listElements);
 

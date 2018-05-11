@@ -1,3 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
+    <array name="atractionDrawableId">
+        <item>@drawable/aqua_1</item>
+        <item>@drawable/fontanna_2</item>
+        <item>@drawable/globus_ski_1</item>
+        <item>@drawable/karnawal_6</item>
+        <item>@drawable/maraton_lubelski</item>
+        <item>@drawable/mks_5</item>
+        <item>@drawable/noc_kultury_2</item>
+        <item>@drawable/skate_town_2</item>
+        <item>@drawable/sloneczny_wrotkow_3</item>
+    </array>
+
+    <array name="hotelDrawableId">
+        <item>@drawable/agit_2</item>
+        <item>@drawable/alter_2</item>
+        <item>@drawable/browar_lwow_2</item>
+        <item>@drawable/campanille_2</item>
+        <item>@drawable/europa_hotel_1</item>
+        <item>@drawable/gordzka_20_2</item>
+        <item>@drawable/grand_hotel_4</item>
+        <item>@drawable/illan_3</item>
+        <item>@drawable/vanilla_1</item>
+        <item>@drawable/wieniawski_1</item>
+    </array>
+
+    <array name="historicalObject">
+        <item>@drawable/lublin_3</item>
+        <item>@drawable/dzon</item>
+        <item>@drawable/podziemia_2</item>
+        <item>@drawable/piwnica_pod_fortuna</item>
+        <item>@drawable/stare_miasto_2</item>
+        <item>@drawable/plac_litewski_4</item>
+        <item>@drawable/brama_krakowska_5</item>
+        <item>@drawable/wieza_trynitarska_1</item>
+        <item>@drawable/ogrod_saski_1</item>
+        <item>@drawable/banner_wiosna</item>
+
+    </array>
+
+
 </resources>

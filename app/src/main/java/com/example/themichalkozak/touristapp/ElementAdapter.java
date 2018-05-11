@@ -35,9 +35,11 @@ public class ElementAdapter extends ArrayAdapter<ListElements> {
         ListElements currentElement = getItem(position);
 
 
+        ImageView elementImage = listItemView.findViewById(R.id.list_item_element_image);
+        elementImage.setBackgroundResource(currentElement.getmImageResourceId());
         TextView elementName = listItemView.findViewById(R.id.list_item_element_name);
         elementName.setText(currentElement.getmName());
-        elementName.setBackgroundResource(currentElement.getmImageResourceId());
+
 
 //        ImageView elementImage = listItemView.findViewById(R.id.list_item_image_view);
 //        elementImage.setImageResource(currentElement.getmImageResourceId());
