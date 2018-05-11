@@ -1,8 +1,6 @@
 package com.example.themichalkozak.touristapp.dummy.Fragments;
 
-import android.content.Context;
 import android.content.res.TypedArray;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -58,7 +56,7 @@ public class HistoricalFragment extends Fragment {
 
         String historicalArray [] = getResources().getStringArray(R.array.historicalObjectName);
 
-        TypedArray imgs = getResources().obtainTypedArray(R.array.historicalObject);
+        TypedArray imgs = getResources().obtainTypedArray(R.array.historicalDrawableID);
         int lenDrawableArray = imgs.length();
 
         int historicalDrawableId  [] = new int [lenDrawableArray];

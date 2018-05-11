@@ -1,5 +1,6 @@
 package com.example.themichalkozak.touristapp.dummy.Fragments;
 
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -47,10 +48,22 @@ public class RestaurantFragment extends Fragment {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.list_item,container,false);
 
+        TypedArray imgs = getResources().obtainTypedArray(R.array.restaurantDrawableID);
+        int lenRestaurantArray = imgs.length();
 
-        listElements.add(new ListElements("Zamek", R.drawable.lublin_2));
-        listElements.add(new ListElements("Zamek", R.drawable.lublin_3));
+        int restaurantDrawableId [] = new int [lenRestaurantArray];
 
+        String restaurantName [] = getResources().getStringArray(R.array.resturantObjectName);
+
+
+        for(int i=0;i<lenRestaurantArray;i++){
+            restaurantDrawableId [i] = imgs.getResourceId(i,0);
+
+        }
+
+        for (int i=0;i<lenRestaurantArray;i++){
+            listElements.add(new ListElements(restaurantName[i],restaurantDrawableId[i]));
+        }
 
         ElementAdapter elementAdapter  = new ElementAdapter(getActivity(),listElements);
 

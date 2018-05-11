@@ -26,7 +26,7 @@
         <item>@drawable/wieniawski_1</item>
     </array>
 
-    <array name="historicalObject">
+    <array name="historicalDrawableID">
         <item>@drawable/lublin_3</item>
         <item>@drawable/dzon</item>
         <item>@drawable/podziemia_2</item>
@@ -38,6 +38,19 @@
         <item>@drawable/ogrod_saski_1</item>
         <item>@drawable/banner_wiosna</item>
 
+    </array>
+
+    <array name="restaurantDrawableID">
+        <item>@drawable/stolow_16_1</item>
+        <item>@drawable/bosko_2</item>
+        <item>@drawable/browar_grodzka_1</item>
+        <item>@drawable/czarcia_lapa_1</item>
+        <item>@drawable/mandragora_2</item>
+        <item>@drawable/miedzy_slowami_1</item>
+        <item>@drawable/perlowa_2</item>
+        <item>@drawable/stol_wol_2</item>
+        <item>@drawable/sw_michal_2</item>
+        <item>@drawable/trybunalska_3</item>
     </array>
 
 

@@ -46,6 +46,17 @@
     <string name="ogrod_saski">Ogród Saski</string>
     <string name="muzeum_wsi">Muzeum Wsi Lubelskiej</string>
 
+    <string name="restauracja_16_stolow">16 stołów</string>
+    <string name="bosko">Lody Bosko</string>
+    <string name="browar_grodzka">Browar Grodzka</string>
+    <string name="czarcia_lapa">Czarcia Łapa</string>
+    <string name="mandragora">Mandragora</string>
+    <string name="miedzy_slowami">Między Słowami</string>
+    <string name="perlowa_pijalnia">Perłowa Pijalnia Piwa</string>
+    <string name="stol_wol">Stół i Wół</string>
+    <string name="sw_michal">Św. Michał</string>
+    <string name="trybunalska">Trybunalska</string>
+
     <string-array name="attractionName">
         <item>@string/aqua</item>
         <item>@string/fontanna</item>
@@ -87,4 +98,20 @@
         <item>@string/muzeum_wsi</item>
 
     </string-array>
+
+    <string-array name="resturantObjectName">
+        <item>@string/restauracja_16_stolow</item>
+        <item>@string/bosko</item>
+        <item>@string/browar_grodzka</item>
+        <item>@string/czarcia_lapa</item>
+        <item>@string/mandragora</item>
+        <item>@string/miedzy_slowami</item>
+        <item>@string/perlowa_pijalnia</item>
+        <item>@string/stol_wol</item>
+        <item>@string/sw_michal</item>
+        <item>@string/trybunalska</item>
+
+    </string-array>
+
+
 </resources>
