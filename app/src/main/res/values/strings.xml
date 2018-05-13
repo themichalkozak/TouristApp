@@ -56,6 +56,12 @@
     <string name="stol_wol">Stół i Wół</string>
     <string name="sw_michal">Św. Michał</string>
     <string name="trybunalska">Trybunalska</string>
+    <string name="transport">Transport</string>
+    <string name="mounument">Mounument</string>
+    <string name="atraction">Atraction</string>
+    <string name="hotel">Hotel</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="rate">Rate</string>
 
     <string-array name="attractionName">
         <item>@string/aqua</item>

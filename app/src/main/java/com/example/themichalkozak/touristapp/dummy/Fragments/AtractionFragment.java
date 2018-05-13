@@ -21,7 +21,7 @@ import java.util.ArrayList;
 public class AtractionFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-
+    int fragVal;
 
     public AtractionFragment() {
         // Required empty public constructor
@@ -40,7 +40,6 @@ public class AtractionFragment extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-
         }
     }
 

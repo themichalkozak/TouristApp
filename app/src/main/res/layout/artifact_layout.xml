@@ -10,6 +10,7 @@
     <ImageView
         style="@style/list_text_view"
         android:id="@+id/list_item_element_image"
+        android:scaleType="fitXY"
         android:text="@string/default_text"/>
 
     <TextView

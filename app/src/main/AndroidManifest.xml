@@ -16,9 +16,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ParticualarActivity"></activity>
-        <activity android:name=".ListActivity"></activity>
+        <activity android:name=".ParticualarActivity" />
+        <activity
+            android:name=".ListActivity"
+            android:label="Turystyczny Lublin"
+            android:parentActivityName=".MainActivity"/>
+        <activity
+            android:name=".RateActivity"
+            android:label="Turystyczny Lublin"
+            android:parentActivityName=".MainActivity">
 
+        </activity>
     </application>
 
 </manifest>
