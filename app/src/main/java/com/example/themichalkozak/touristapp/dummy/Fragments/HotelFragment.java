@@ -7,7 +7,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
-
 import com.example.themichalkozak.touristapp.ElementAdapter;
 import com.example.themichalkozak.touristapp.ListElements;
 import com.example.themichalkozak.touristapp.R;
@@ -16,14 +15,7 @@ import java.util.ArrayList;
 
 public class HotelFragment extends Fragment {
 
-
-
-    // TODO: Rename and change types of parameters
-
-
-
     public HotelFragment() {
-        // Required empty public constructor
     }
 
     public static HotelFragment newInstance() {
@@ -37,9 +29,7 @@ public class HotelFragment extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
 
-        }
     }
 
     @Override
@@ -52,6 +42,7 @@ public class HotelFragment extends Fragment {
         ArrayList<ListElements> listElements = new ArrayList<>();
 
         String hotelName [] = getResources().getStringArray(R.array.hotelName);
+        String descriptionArray [] = getResources().getStringArray(R.array.monument_description);
 
         TypedArray imgs = getResources().obtainTypedArray(R.array.hotelDrawableId);
         int lenDrawableId = imgs.length();
@@ -60,7 +51,11 @@ public class HotelFragment extends Fragment {
 
         for (int i=0;i<lenDrawableId;i++){
             hotelDrawableId [i] = imgs.getResourceId(i,0);
-            listElements.add(new ListElements(hotelName[i],hotelDrawableId[i]));
+
+        }
+
+        for(int i =0;i<lenDrawableId;i++){
+            listElements.add(new ListElements(hotelName[i],hotelDrawableId[i],descriptionArray[i]));
         }
 
         imgs.recycle();

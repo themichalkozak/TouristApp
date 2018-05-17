@@ -44,6 +44,8 @@ public class ElementAdapter extends ArrayAdapter<ListElements> {
         elementImage.setBackgroundResource(currentElement.getmImageResourceId());
         TextView elementName = listItemView.findViewById(R.id.list_item_element_name);
         elementName.setText(currentElement.getmName());
+        TextView elementDescription = listItemView.findViewById(R.id.list_item_description);
+        elementDescription.setText(currentElement.getmDescription());
 
         final LinearLayout hiddenLayout = listItemView.findViewById(R.id.hidden_layout);
         hiddenLayout.setVisibility(View.GONE);
@@ -59,11 +61,6 @@ public class ElementAdapter extends ArrayAdapter<ListElements> {
         });
 
 
-//        ImageView elementImage = listItemView.findViewById(R.id.list_item_image_view);
-//        elementImage.setImageResource(currentElement.getmImageResourceId());
-
-//        TextView elementDescription = listItemView.findViewById(R.id.list_item_description);
-//        elementDescription.setText(currentElement.getmDescription());
 //
 //        TextView elementTelefon = listItemView.findViewById(R.id.list_item_telefon);
 //        elementTelefon.setText(currentElement.getmTelefonNumber());

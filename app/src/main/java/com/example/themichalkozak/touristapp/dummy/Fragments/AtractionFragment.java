@@ -26,16 +26,12 @@ import java.util.ArrayList;
 
 
 public class AtractionFragment extends Fragment {
-    // TODO: Rename parameter arguments, choose names that match
-    // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
-    int fragVal;
+
 
     public AtractionFragment() {
-        // Required empty public constructor
     }
 
 
-    // TODO: Rename and change types and number of parameters
     public static AtractionFragment newInstance() {
         AtractionFragment fragment = new AtractionFragment();
         Bundle args = new Bundle();
@@ -50,7 +46,7 @@ public class AtractionFragment extends Fragment {
         }
     }
 
-    String descriptionArray [] = {"1","2","3","4","5","6","7","8","9","10"};
+
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -67,6 +63,7 @@ public class AtractionFragment extends Fragment {
 
         int attractionArray []= new int [lenImageArray];
         String attractionNameArray [] = getResources().getStringArray(R.array.attractionName);
+        String descriptionArray [] = getResources().getStringArray(R.array.monument_description);
 
         for (int i=0;i<lenImageArray;i++){
             attractionArray[i] = imgs.getResourceId(i,0);
@@ -74,14 +71,10 @@ public class AtractionFragment extends Fragment {
         imgs.recycle();
 
 
+        for(int i=0;i<lenImageArray;i++) {
 
+            listElements.add(new ListElements(attractionNameArray[i],attractionArray[i],descriptionArray[i]));
 
-
-
-        for(int i=0;i<attractionArray.length;i++) {
-
-            listElements.add(new ListElements(attractionNameArray[i],attractionArray[i]));
-            Log.i("Resource", ""+ attractionArray[i]);
         }
 
 
@@ -91,7 +84,8 @@ public class AtractionFragment extends Fragment {
 
         listView.setAdapter(elementAdapter);
 
-        return rootView;    }
+        return rootView;
+    }
 
 
 

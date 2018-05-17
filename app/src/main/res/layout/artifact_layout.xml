@@ -11,6 +11,7 @@
         style="@style/list_text_view"
         android:id="@+id/list_item_element_image"
         android:scaleType="fitXY"
+        android:contentDescription="@string/image_fragment"
         android:text="@string/default_text"/>
 
     <TextView
@@ -25,6 +26,7 @@
         style="@style/list_text_view" />
 
     <LinearLayout
+        android:background="@color/primary"
         android:layout_below="@id/list_item_element_name"
         android:id="@+id/hidden_layout"
         android:layout_width="match_parent"
@@ -35,11 +37,12 @@
         <TextView
             android:id="@+id/header_description"
             style="@style/list_item_header"
-            android:gravity="center"
+            android:textColor="#FF5252"
             android:text="@string/description" />
 
         <TextView
             android:id="@+id/list_item_description"
+            android:textColor="@android:color/white"
             style="@style/ordinaryText" />
 
 
@@ -47,26 +50,24 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_margin="16dp">
 
             <ImageView
-                style="@style/ordinaryText"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/ic_phone_black_24dp" />
-
+                android:contentDescription="@string/web_icon"
+                style="@style/icon_fragment_style"
+                android:src="@drawable/web_icon" />
 
             <ImageView
-                style="@style/ordinaryText"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/webcion" />
+                android:contentDescription="@string/phone_icon"
+                style="@style/icon_fragment_style"
+                android:src="@drawable/ic_phone_black_48dp" />
 
             <ImageView
-                style="@style/ordinaryText"
-                android:layout_width="48dp"
-                android:layout_height="48dp"
-                android:src="@drawable/ic_email_black_24dp" />
+                android:contentDescription="@string/email_icon"
+                style="@style/icon_fragment_style"
+
+                android:src="@drawable/ic_mail_black_48dp" />
 
 
 

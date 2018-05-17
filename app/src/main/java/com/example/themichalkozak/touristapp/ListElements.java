@@ -9,22 +9,19 @@ public class ListElements {
     private String mName;
     private int mImageResourceId;
     private String mDescription;
-    private String mTelefonNumber;
-    private String mWeb;
-    private String eMail;
+
 
     public ListElements(String mName, int mImage, String mDescription, String mTelefonNumber, String mWeb, String eMail) {
         this.mName = mName;
         this.mImageResourceId = mImage;
         this.mDescription = mDescription;
-        this.mTelefonNumber = mTelefonNumber;
-        this.mWeb = mWeb;
-        this.eMail = eMail;
+
     }
 
-    public ListElements(String mName, int mImageResourceId) {
+    public ListElements(String mName, int mImageResourceId, String mDescription) {
         this.mName = mName;
         this.mImageResourceId = mImageResourceId;
+        this.mDescription =mDescription;
     }
 
     public String getmName() {
@@ -39,15 +36,4 @@ public class ListElements {
         return mDescription;
     }
 
-    public String getmTelefonNumber() {
-        return mTelefonNumber;
-    }
-
-    public String getmWeb() {
-        return mWeb;
-    }
-
-    public String geteMail() {
-        return eMail;
-    }
 }

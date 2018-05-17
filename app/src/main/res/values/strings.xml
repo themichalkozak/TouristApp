@@ -36,7 +36,7 @@
     <string name="wieniawski">Hotel Wieniawski</string>
 
     <string name="zamek">Zamek Lubelski</string>
-    <string name="dzon">Dżon</string>
+    <string name="dzon">Dondżon</string>
     <string name="trasa_podziemna">Trasa podziemna</string>
     <string name="piwnica_pod_fortuna">Piwnica pod fortuną</string>
     <string name="stare_miasto">Stare Miasto</string>
@@ -63,6 +63,44 @@
     <string name="restaurant">Restaurant</string>
     <string name="rate">Rate</string>
     <string name="description">description</string>
+
+    <string name="zamek_description">Zamek w Lublinie – zamek królewski w Lublinie, pierwotnie zbudowany w XII wieku[1],
+        wielokrotnie przebudowywany, w latach 1831–1954 wykorzystywany jako więzienie, od 1957 siedziba Muzeum Lubelskiego.
+        W XIII wieku do zamku dobudowano romański donżon (wieżę mieszkalno-obronną). XIV-wieczna Kaplica Trójcy Świętej,
+        wybudowana jako fundacja Kazimierza Wielkiego, pokryta rusko-bizantyńskimi freskami z 1418,
+        powstałymi na zamówienie Władysława Jagiełły, jest jednym z najcenniejszych zabytków w Polsce.</string>
+    <string name="dzon_description">Donżon w Lublinie został wzniesiony we wczesnym średniowieczu, w stylu romańskim i jest to jedyna budowla na terenie Lubelszczyzny reprezentująca ten styl.
+            Wieża zbudowana jest na planie koła, dolne partie powstały z łamanego kamienia, a górne z cegły.
+        Całość wieńczy XIX-wieczny krenelaż. Grubość muru wieży wynosi aż 3,4 metra! W murze znajdują się na pierwszej kondygnacji niewielkie okna,
+            a na drugiej zachowało się biforium. Widoczny jest tu również kamienny portalik.
+            Wewnątrz baszty znajduje się spiralna klatka schodowa, którą dochodzi się to tarasu widokowego na szczycie wieży,
+        skąd rozciąga się piękna panorama miasta. Baszta jest bowiem udostępniona dla turystów w ramach Muzeum Lubelskiego.</string>
+    <string name="trasa_podziemna_description">Lubelskie Podziemia to ok. 280-metrowa trasa turystyczna biegnąca pod Rynkiem i kamienicami Starego Miasta.
+        Trasa powstała w wyniku połączenia kilkunastu z licznych staromiejskich piwnic, których historia sięga początku XVI w.,
+        czyli stulecia największej świetności Lublina. Zostały one częściowo połączone korytarzami i w ten sposób pod miastem powstał podziemny labirynt.
+        Lubelska Trasa Podziemna ma charakter turystyczno-edukacyjny. Spacer zabytkowymi piwnicami staromiejskimi, który już sam w sobie dostarcza wielkich emocji,
+        jest jednocześnie wędrówką w czasie pozwalającą odkryć przeszłość miasta. Historię rozwoju przestrzennego Lublina przybliżają makiety ukazujące miasto od VIII w. n. e., poprzez średniowiecze i wiek XVI.
+        W podziemiach znajdują się także dwie makiety przedstawiające dawne panoramy miasta: najstarszy widok Lublina z XVI w. i najbardziej znany widok z pierwszej połowy wieku XVII.
+        Punktem kulminacyjnym podziemnej wędrówki jest, wzbogacona światłem i dźwiękiem,  ruchoma makieta Wielkiego Pożaru Lublina (1719). Wizualizacja została stworzona na podstawie obrazu znajdujacego się w kościele ojców dominikanów
+        (będącego pamiątką owego pożaru) i archiwalnych źródeł pisanych.
+        Dodatkową atrakcją podziemi są poniedziałkowe inscenizacje. Lubelska Trasa Podziemna łączy dwa ważne dla Lublina miejsca: zaczyna się w dawnym ratuszu, czyli w centrum władzy świeckiej a kończy przy pozostałościach kościoła św. Michała Archanioła, skupiającego dawniej życie religijne miasta.</string>
+    <string name="piwnica_pod_fortuna_description">W pierwszej kondygnacji piwnic zabytkowej kamienicy Lubomelskich (Rynek 8) zachowało się pomieszczenie, którego ściany pokryte są renesansową polichromią - wyjątkowymi w skali Polski malowidłami o tematyce świeckiej. Dziesięć obrazów rozmieszczonych na ścianach, okapie kominka i sklepieniu zawiera liczne odwołania do kultury antycznej (mitologii, literatury) oraz renesansowej obyczajowości. Polichromie zostały wydatowane na drugą połowę XVI wieku.</string>
+    <string name="stare_miasto_description">Na terenie Starego Miasta znajdują się liczne zabytki, w tym pozostałości murów miejskich (bramy: Krakowska i Grodzka oraz Baszta Gotycka), renesansowe kamienice, dawny ratusz (Trybunał Koronny) stojący na środku rynku, archikatedra i Wieża Trynitarska, bazylika dominikanów, czy Teatr Stary. Wewnątrz murów znajduje się Plac Po Farze, a przed Bramą Krakowską – Plac Łokietka. Poza granicami murów miejskich na terenie dzielnicy administracyjnej Stare Miasto znajduje się Zamek z Kaplicą Zamkową.</string>
+    <string name="plac_litewski_description">W 1569 roku Zygmunt August odebrał tu od księcia pruskiego Albrechta Fryderyka hołd i przysięgę lenną, zaś podczas podpisywania w tym samym roku Unii Lubelskiej, plac był miejscem obozowania posłów litewskich W połowie XVII wieku w części zachodniej placu osiedli ojcowie bonifratrzy. Po kasacie zakonu i wyburzeniu zabudowań klasztornych, wytyczono tu plac Musztry przeznaczony dla rosyjskich żołnierzy. W tym czasie na placu znajdował się także sobór prawosławny. Traktowany przez Lublinian jako symbol rusyfikacji, został rozebrany w 1922 roku, zaś materiał z rozbiórki przeznaczono na budowę Domu Żołnierza
+W 1826 roku, z inicjatywy ks. Stanisława Staszica, w pobliżu placu Musztry, umieszczono obelisk upamiętniający zawarcie unii polsko-litewskiej. Zastąpił on zniszczony przez Rosjan wcześniejszy monument wystawiony w 1569 roku przez Zygmunta Augusta. Klasycystyczny, żeliwny obelisk zdobią złocone płaskorzeźby wykonane przez Pawła Malińskiego, ucznia Bertela Thorvaldsena. Polskę przedstawia kobieca postać odziana w rzymską togę z koroną królewską na głowie. U jej stóp umieszczona została tarcza zawierająca godło – piastowskiego orła. Litwę symbolizuje kobieta w greckim chitonie z książęcą mitrą na głowie i herbem Pogoni.
+Po drugiej stronie placu znajduje się wystawiony w 1795 roku pomnik Konstytucji 3 Maja, będący w latach 80. XX wieku, a szczególnie w okresie stanu wojennego, symbolem niezawisłości narodowej. Obok znajduje się Grób Nieznanego Żołnierza. Niegdyś spoczywały w nim prochy obrońców Lwowa, jednak jeszcze w latach 20. XX wieku został on przekształcony w pomnik zawierający ziemię z kilku pól bitewnych.
+W okresie powojennym, gdy plac nosił imię Józefa Stalina, na jego środku postawiono pomnik Wdzięczności Armii Radzieckiej w formie odlanej z brązu postaci radzieckiego żołnierza trzymającego w ręku sztandar. Dla mieszkańców miasta był on symbolem politycznej niewoli i zależności. Pomnik został usunięty w 1990 roku. Obecnie na jego miejscu znajduje się konny posąg marszałka Piłsudskiego.</string>
+    <string name="brama_krakowska_description">Idąc na Stare Miasto od strony Krakowskiego Przedmieścia, z daleka widzimy bryłę Bramy Krakowskiej. Ta ceglana budowla swoją historią sięga XIV wieku. Po groźnym dla miasta najeździe Tatarów w 1341 roku postanowiono otoczyć miasto murami obronnymi i opatrzyć je bramami. Jedną z nich jest Brama Krakowska, która swoją nazwę wywodzi od traktu i przedmieścia, na które prowadziła.</string>
+    <string name="wieza_trynitarska_description">Wieża Trynitarska jest najwyższym punktem zabudowy staromiejskiej Lublina. Została wzniesiona w 1693 roku w miejscu dawnej furty miejskiej jako dzwonnica. Dzisiejszy wygląd zawdzięcza przebudowie z 1819 roku, a jej nazwa pochodzi od zakonu trynitarzy, którzy rezydowali w budynkach pojezuickich w latach 1781–1814.</string>
+    <string name="ogrod_saski_description">Ogród Saski powstał na płaskowyżu dawnych Pól Dominikańskich, przy trakcie warszawskim w 1837 roku, a jego głównym założycielem i koordynatorem prac przy jego budowie był Feliks Bieczyński. Do roku 1837 Lublin nie posiadał parku miejskiego, a powstały w 1827 roku trzy hektarowy skwer miejski nie spełniał swojej roli przede wszystkim ze względu na częste podtapianie. Bieczyński planując architekturę oraz układ przyrodniczy parku opierał się na projektach parków istniejących w innych miastach ze szczególnym uwzględnieniem parku Czartoryskich w Puławach, który był już wtedy w pełni ukształtowany i należał do najpiękniejszych tego typu obiektów na ziemiach polskich. Największym walorem powstającego parku było ukształtowanie powierzchni z licznymi naturalnymi dolinkami stwarzającymi możliwość wprowadzenia wielu gatunków roślin zielnych oraz drzew i krzewów.</string>
+    <string name="muzeum_description">  Muzeum Wsi Lubelskiej malowniczo położone w dolinie rzeki Czechówki, jest jednym z największych skansenów w Polsce. Prezentuje kulturową różnorodność województwa, dzięki połączeniu bogatej kolekcji architektury i eksponatów z troską o niematerialne dziedzictwo regionu. W sposób kompleksowy gromadzi przedmioty związane z dawnym życiem wsi, dworów oraz miasteczek, ale też utrwala wiedzę na temat zwyczajów, obrzędów, tradycji i codziennej pracy ludzi minionej epoki.</string>
+    <string name="rate_me">Rate me...</string>
+    <string name="rate_button_text">RATE</string>
+    <string name="image_fragment">image_fragment</string>
+    <string name="web_icon">web_icon</string>
+    <string name="phone_icon">phone_icon</string>
+    <string name="email_icon">email_icon</string>
+
 
     <string-array name="attractionName">
         <item>@string/aqua</item>
@@ -118,6 +156,19 @@
         <item>@string/sw_michal</item>
         <item>@string/trybunalska</item>
 
+    </string-array>
+
+    <string-array name="monument_description">
+        <item>@string/zamek_description</item>
+        <item>@string/dzon_description</item>
+        <item>@string/trasa_podziemna_description</item>
+        <item>@string/piwnica_pod_fortuna_description</item>
+        <item>@string/stare_miasto_description</item>
+        <item>@string/plac_litewski_description</item>
+        <item>@string/brama_krakowska_description</item>
+        <item>@string/wieza_trynitarska_description</item>
+        <item>@string/ogrod_saski_description</item>
+        <item>@string/muzeum_description</item>
     </string-array>
 
 
