@@ -96,8 +96,6 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.main_rate_us:
                     Intent rateIntent = new Intent(MainActivity.this,RateActivity.class);
                     startActivity(rateIntent);
-                default:
-                    Toast.makeText(MainActivity.this,"Bugs Man",Toast.LENGTH_SHORT).show();
             }
         }
     };

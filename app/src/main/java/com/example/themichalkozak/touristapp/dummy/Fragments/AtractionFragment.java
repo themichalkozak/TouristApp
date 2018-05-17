@@ -3,13 +3,20 @@ package com.example.themichalkozak.touristapp.dummy.Fragments;
 
 
 import android.content.res.TypedArray;
+import android.graphics.Color;
+import android.icu.text.UnicodeSetSpanner;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.themichalkozak.touristapp.ElementAdapter;
 import com.example.themichalkozak.touristapp.ListElements;
@@ -43,12 +50,15 @@ public class AtractionFragment extends Fragment {
         }
     }
 
+    String descriptionArray [] = {"1","2","3","4","5","6","7","8","9","10"};
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.list_item,container,false);
 
         ArrayList<ListElements> listElements = new ArrayList<>();
+
 
 
         TypedArray imgs = getResources().obtainTypedArray(R.array.atractionDrawableId);
@@ -64,6 +74,10 @@ public class AtractionFragment extends Fragment {
         imgs.recycle();
 
 
+
+
+
+
         for(int i=0;i<attractionArray.length;i++) {
 
             listElements.add(new ListElements(attractionNameArray[i],attractionArray[i]));
@@ -73,14 +87,11 @@ public class AtractionFragment extends Fragment {
 
         ElementAdapter elementAdapter  = new ElementAdapter(getActivity(),listElements);
 
-        ListView listView = (ListView) rootView.findViewById(R.id.list);
+        final ListView listView = (ListView) rootView.findViewById(R.id.list);
 
         listView.setAdapter(elementAdapter);
 
-
         return rootView;    }
-
-
 
 
 

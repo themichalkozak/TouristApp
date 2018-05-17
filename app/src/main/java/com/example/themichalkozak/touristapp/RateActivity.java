@@ -30,6 +30,6 @@ public class RateActivity extends AppCompatActivity {
     }
 
     public void rateMe(){
-        Toast.makeText(RateActivity.this,String.valueOf(ratingBar.getRating()),Toast.LENGTH_SHORT).show();
+        Toast.makeText(RateActivity.this,"Thanks for rate :) ",Toast.LENGTH_SHORT).show();
     }
 }

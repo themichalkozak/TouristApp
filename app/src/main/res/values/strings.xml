@@ -62,6 +62,7 @@
     <string name="hotel">Hotel</string>
     <string name="restaurant">Restaurant</string>
     <string name="rate">Rate</string>
+    <string name="description">description</string>
 
     <string-array name="attractionName">
         <item>@string/aqua</item>

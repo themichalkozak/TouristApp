@@ -6,7 +6,9 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.themichalkozak.touristapp.ElementAdapter;
 import com.example.themichalkozak.touristapp.ListElements;
@@ -74,6 +76,7 @@ public class HistoricalFragment extends Fragment {
         ListView listView = (ListView) rootView.findViewById(R.id.list);
 
         listView.setAdapter(elementAdapter);
+
 
 
         return rootView;    }

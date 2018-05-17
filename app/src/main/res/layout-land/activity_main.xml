@@ -8,18 +8,18 @@
 
     <ViewFlipper
         android:id="@+id/flipper_img"
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/main_image_view"
+        android:layout_width="@dimen/flipper_landscape_width"
+        android:layout_height="@dimen/flipper_landscape_height"
         android:layout_margin="3dp">
 
     </ViewFlipper>
 
     <LinearLayout
+        android:layout_marginStart="5dp"
         android:id="@+id/main_grid_layout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/flipper_img"
-        android:gravity="center"
+        android:layout_toEndOf="@id/flipper_img"
         android:orientation="horizontal">
 
 

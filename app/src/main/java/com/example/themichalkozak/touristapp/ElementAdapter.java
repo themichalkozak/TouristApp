@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -18,6 +20,9 @@ import java.util.ArrayList;
 
 public class ElementAdapter extends ArrayAdapter<ListElements> {
 
+
+
+
     public ElementAdapter(Context context, ArrayList<ListElements> elements) {
         super(context, 0, elements);
     }
@@ -27,9 +32,9 @@ public class ElementAdapter extends ArrayAdapter<ListElements> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         View listItemView = convertView;
-        if(listItemView == null){
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
-                    R.layout.artifact_layout,parent,false);
+                    R.layout.artifact_layout, parent, false);
         }
 
         ListElements currentElement = getItem(position);
@@ -39,6 +44,19 @@ public class ElementAdapter extends ArrayAdapter<ListElements> {
         elementImage.setBackgroundResource(currentElement.getmImageResourceId());
         TextView elementName = listItemView.findViewById(R.id.list_item_element_name);
         elementName.setText(currentElement.getmName());
+
+        final LinearLayout hiddenLayout = listItemView.findViewById(R.id.hidden_layout);
+        hiddenLayout.setVisibility(View.GONE);
+        elementImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if (hiddenLayout.getVisibility() == View.GONE) {
+                    hiddenLayout.setVisibility(View.VISIBLE);
+                } else if (hiddenLayout.getVisibility() == View.VISIBLE) {
+                    hiddenLayout.setVisibility(View.GONE);
+                }
+            }
+        });
 
 
 //        ImageView elementImage = listItemView.findViewById(R.id.list_item_image_view);
@@ -58,6 +76,5 @@ public class ElementAdapter extends ArrayAdapter<ListElements> {
 
         return listItemView;
     }
-
 
 }
