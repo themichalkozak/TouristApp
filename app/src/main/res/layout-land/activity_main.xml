@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    tools:context="com.example.themichalkozak.touristapp.MainActivity">
+
+    <ViewFlipper
+        android:id="@+id/flipper_img"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_image_view"
+        android:layout_margin="3dp">
+
+    </ViewFlipper>
+
+    <LinearLayout
+        android:id="@+id/main_grid_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/flipper_img"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_transport"
+                style="@style/main_start_activity"
+                android:background="@drawable/rectangle_transport" />
+
+            <TextView
+                style="@style/description_main_icon"
+                android:text="@string/transport" />
+
+            <TextView
+                android:id="@+id/main_hotels"
+                style="@style/main_start_activity"
+                android:background="@drawable/rectangle_hotel" />
+
+            <TextView
+                style="@style/description_main_icon"
+                android:text="@string/hotel" />
+
+
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_atraction"
+                style="@style/main_start_activity"
+                android:background="@drawable/rectangle_atraction" />
+
+            <TextView
+                style="@style/description_main_icon"
+                android:text="@string/atraction" />
+
+            <TextView
+                android:id="@+id/main_restaurants"
+                style="@style/main_start_activity"
+                android:background="@drawable/rectangle_restaurant" />
+
+            <TextView
+                style="@style/description_main_icon"
+                android:text="@string/restaurant" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/main_relic"
+                style="@style/main_start_activity"
+                android:background="@drawable/rectangle_monument" />
+
+            <TextView
+                style="@style/description_main_icon"
+                android:text="@string/mounument" />
+
+
+            <TextView
+                android:id="@+id/main_rate_us"
+                style="@style/main_start_activity"
+                android:background="@drawable/rectangle_star" />
+
+            <TextView
+                style="@style/description_main_icon"
+                android:text="@string/rate" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
