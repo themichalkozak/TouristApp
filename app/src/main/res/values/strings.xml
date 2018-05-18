@@ -171,5 +171,10 @@ W okresie powojennym, gdy plac nosił imię Józefa Stalina, na jego środku pos
         <item>@string/muzeum_description</item>
     </string-array>
 
+    <string-array name="atraction_site">
+        <item><![CDATA[http://www.muzeumlubelskie.pl]]></item>
+        <item><![CDATA[http://www.muzeumlubelskie.pl]]></item>
+    </string-array>
+
 
 </resources>

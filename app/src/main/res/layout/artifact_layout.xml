@@ -54,16 +54,19 @@
             android:layout_margin="16dp">
 
             <ImageView
+                android:id="@+id/list_item_web"
                 android:contentDescription="@string/web_icon"
                 style="@style/icon_fragment_style"
                 android:src="@drawable/web_icon" />
 
             <ImageView
+                android:id="@+id/list_item_telefon"
                 android:contentDescription="@string/phone_icon"
                 style="@style/icon_fragment_style"
                 android:src="@drawable/ic_phone_black_48dp" />
 
             <ImageView
+                android:id="@+id/list_item_email"
                 android:contentDescription="@string/email_icon"
                 style="@style/icon_fragment_style"
 

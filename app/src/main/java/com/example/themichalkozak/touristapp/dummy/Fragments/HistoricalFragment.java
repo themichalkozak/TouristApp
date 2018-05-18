@@ -61,7 +61,7 @@ public class HistoricalFragment extends Fragment {
 
         for(int i=0;i<lenDrawableArray;i++){
 
-            listElements.add(new ListElements(historicalArray[i],historicalDrawableId[i],descriptionArray[i]));
+            listElements.add(new ListElements(historicalArray[i],historicalDrawableId[i],descriptionArray[i],"https://www.youtube.com/","731660735","themichalkozak@gmail.com"));
         }
 
 

@@ -9,19 +9,23 @@ public class ListElements {
     private String mName;
     private int mImageResourceId;
     private String mDescription;
-
-
-    public ListElements(String mName, int mImage, String mDescription, String mTelefonNumber, String mWeb, String eMail) {
-        this.mName = mName;
-        this.mImageResourceId = mImage;
-        this.mDescription = mDescription;
-
-    }
+    private String siteURL;
+    private String mTelefon;
+    private String mEmailAdress;
 
     public ListElements(String mName, int mImageResourceId, String mDescription) {
         this.mName = mName;
         this.mImageResourceId = mImageResourceId;
         this.mDescription =mDescription;
+    }
+
+    public ListElements(String mName, int mImageResourceId, String mDescription,String siteURL,String mTelefon,String mEmailAdress) {
+        this.mName = mName;
+        this.mImageResourceId = mImageResourceId;
+        this.mDescription =mDescription;
+        this.siteURL = siteURL;
+        this.mTelefon = mTelefon;
+        this.mEmailAdress = mEmailAdress;
     }
 
     public String getmName() {
@@ -36,4 +40,15 @@ public class ListElements {
         return mDescription;
     }
 
+    public String getSiteURL() {
+        return siteURL;
+    }
+
+    public String getmTelefon() {
+        return mTelefon;
+    }
+
+    public String getmEmailAdress() {
+        return mEmailAdress;
+    }
 }

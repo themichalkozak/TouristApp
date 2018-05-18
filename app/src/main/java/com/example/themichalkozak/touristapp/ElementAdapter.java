@@ -1,6 +1,9 @@
 package com.example.themichalkozak.touristapp;
 
 import android.content.Context;
+import android.content.Intent;
+import android.media.AudioManager;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -21,6 +24,10 @@ import java.util.ArrayList;
 public class ElementAdapter extends ArrayAdapter<ListElements> {
 
 
+    String urlweb;
+    String telefon;
+    String email;
+    View listItemView;
 
 
     public ElementAdapter(Context context, ArrayList<ListElements> elements) {
@@ -31,7 +38,7 @@ public class ElementAdapter extends ArrayAdapter<ListElements> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        View listItemView = convertView;
+        listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.artifact_layout, parent, false);
@@ -60,18 +67,37 @@ public class ElementAdapter extends ArrayAdapter<ListElements> {
             }
         });
 
+        urlweb = currentElement.getSiteURL();
+        email = currentElement.getmEmailAdress();
+        telefon = currentElement.getmTelefon();
 
-//
-//        TextView elementTelefon = listItemView.findViewById(R.id.list_item_telefon);
-//        elementTelefon.setText(currentElement.getmTelefonNumber());
-//
-//        TextView elementWeb = listItemView.findViewById(R.id.list_item_web);
-//        elementWeb.setText(currentElement.getmWeb());
-//
-//        TextView elementEmail = listItemView.findViewById(R.id.list_item_e_mail);
-//        elementEmail.setText(currentElement.geteMail());
+        listItemView.findViewById(R.id.list_item_web).setOnClickListener(awesomeOnClickListener);
+        listItemView.findViewById(R.id.list_item_telefon).setOnClickListener(awesomeOnClickListener);
+        listItemView.findViewById(R.id.list_item_email).setOnClickListener(awesomeOnClickListener);
+
 
         return listItemView;
     }
+
+    private View.OnClickListener awesomeOnClickListener = new View.OnClickListener() {
+        @Override
+        public void onClick(View v) {
+            switch (v.getId()){
+                case R.id.list_item_web:
+                    Intent webIntent = new Intent(Intent.ACTION_VIEW,Uri.parse(urlweb));
+                    getContext().startActivity(webIntent);
+                    break;
+                case R.id.list_item_telefon:
+                    Intent telefonIntent = new Intent(Intent.ACTION_DIAL,Uri.fromParts("tel",telefon,null));
+                    getContext().startActivity(telefonIntent);
+                    break;
+                case R.id.list_item_email:
+                    Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+                    emailIntent.setData(Uri.parse("mailto:"));
+                    emailIntent.putExtra(Intent.EXTRA_EMAIL,email);
+                    getContext().startActivity(emailIntent);
+            }
+        }
+    };
 
 }
