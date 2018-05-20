@@ -43,6 +43,7 @@ public class HotelFragment extends Fragment {
 
         String hotelName [] = getResources().getStringArray(R.array.hotelName);
         String descriptionArray [] = getResources().getStringArray(R.array.monument_description);
+        String contactArray [] = getResources().getStringArray(R.array.hotel_contact);
 
         TypedArray imgs = getResources().obtainTypedArray(R.array.hotelDrawableId);
         int lenDrawableId = imgs.length();
@@ -55,7 +56,8 @@ public class HotelFragment extends Fragment {
         }
 
         for(int i =0;i<lenDrawableId;i++){
-            listElements.add(new ListElements(hotelName[i],hotelDrawableId[i],descriptionArray[i]));
+            listElements.add(new ListElements(hotelName[i],hotelDrawableId[i],descriptionArray[i],
+                    contactArray[i],contactArray[i+1],contactArray[i+2]));
         }
 
         imgs.recycle();

@@ -45,6 +45,7 @@ public class RestaurantFragment extends Fragment {
 
         String restaurantName [] = getResources().getStringArray(R.array.resturantObjectName);
         String descriptionArray [] = getResources().getStringArray(R.array.monument_description);
+        String contactArray [] = getResources().getStringArray(R.array.restaurant_contact);
 
         for(int i=0;i<lenRestaurantArray;i++){
             restaurantDrawableId [i] = imgs.getResourceId(i,0);
@@ -53,7 +54,8 @@ public class RestaurantFragment extends Fragment {
         imgs.recycle();
 
         for(int i=0;i<lenRestaurantArray;i++){
-            listElements.add(new ListElements(restaurantName[i],restaurantDrawableId[i],descriptionArray[i]));
+            listElements.add(new ListElements(restaurantName[i],restaurantDrawableId[i],descriptionArray[i],
+                    contactArray[i],contactArray[i+1],contactArray[i+2]));
         }
 
         ElementAdapter elementAdapter  = new ElementAdapter(getActivity(),listElements);

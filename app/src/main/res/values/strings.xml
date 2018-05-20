@@ -1,4 +1,4 @@
-<resources>
+<resources xmlns:http="http://schemas.android.com/tools">
     <string name="app_name">TouristApp</string>
     <string name="description_casttle_lublin">Początki zamku związane są z powstaniem w XII wieku kasztelanii lubelskiej.
         Za czasów Kazimierza Sprawiedliwego został wzniesiony na wzgórzu gród umocniony drewniano-ziemnym wałem.
@@ -171,9 +171,180 @@ W okresie powojennym, gdy plac nosił imię Józefa Stalina, na jego środku pos
         <item>@string/muzeum_description</item>
     </string-array>
 
-    <string-array name="atraction_site">
-        <item><![CDATA[http://www.muzeumlubelskie.pl]]></item>
-        <item><![CDATA[http://www.muzeumlubelskie.pl]]></item>
+    <string name="mosir_url">http://www.mosir.lublin.pl/obiekty/aqua-lublin</string>
+    <string name="mosir_tel">81 466 61 01</string>
+    <string name="mosir_email">osrodek@mosir.lublin.pl</string>
+
+    <string-array name="atraction_contact">
+
+        <item>@string/mosir_url</item>
+        <item>@string/mosir_tel</item>
+        <item>@string/mosir_email</item>
+
+        <item>http://fontanna-multimedialna.pl/lublin/</item>
+        <item>+48 81 466 3800 </item>
+        <item>kontakt@fontanna-multimedialna.pl</item>
+
+        <item>http://www.mosir.lublin.pl/obiekty/globus-ski</item>
+        <item>814665101</item>
+        <item>osrodek@mosir.lublin.pl</item>
+
+        <item>https://sztukmistrze.eu</item>
+        <item>carnaval@warsztatykultury.pl</item>
+        <item>815330818</item>
+
+        <item>http://www.maraton.lublin.eu/</item>
+        <item>815244510</item>
+        <item>info@maraton.lublin.eu</item>
+
+        <item>http://www.mks.lublin.pl/</item>
+        <item>604 288 907</item>
+        <item>info@mks.lublin.pl</item>
+
+        <item>https://nockultury.pl/</item>
+        <item>81 533 08 18</item>
+        <item>info@nockultury.pl </item>
+
+        <item>http://www.skatetown.pl/</item>
+        <item>+48 791 986 986</item>
+        <item>rezerwacje@skatetown.pl</item>
+
+        <item>http://www.mosir.lublin.pl/obiekty/sloneczny-wrotkow</item>
+        <item>724 990 773</item>
+        <item>wioslo@mosir.lublin.pl</item>
+    </string-array>
+
+    <string-array name="monument_contact">
+
+        <item>http://www.muzeumlubelskie.pl/</item>
+        <item>81 532 50 01</item>
+        <item>kancelaria@muzeumlubelskie.pl</item>
+
+        <item>http://www.muzeumlubelskie.pl/</item>
+        <item>81 532 50 01</item>
+        <item>kancelaria@muzeumlubelskie.pl</item>
+
+        <item>http://teatrnn.pl/podziemia</item>
+        <item>81 534 65 70</item>
+        <item>podziemia@tnn.lublin.pl</item>
+
+        <item>http://www.piwnica.lublin.eu/pl/home</item>
+        <item>81 534 65 70</item>
+        <item>kontakt@lublin4u.pl</item>
+
+        <item>http://teatrnn.pl/leksykon/artykuly/dzielnice-lublina-stare-miasto</item>
+        <item>81 532 58 67</item>
+        <item>teatrnn@tnn.lublin.pl</item>
+
+        <item>http://www.muzeumlubelskie.pl/_Plac_Litewski_-2-316-44.html</item>
+        <item>81 532 50 01</item>
+        <item>kancelaria@muzeumlubelskie.pl</item>
+
+        <item>http://www.muzeumlubelskie.pl/Muzeum_Historii_Miasta_Lublina_/Muzeum_Historii_Miasta_Lublina_Brama_Krakowska_-1-263-35.html</item>
+        <item>81 532 50 01</item>
+        <item>kancelaria@muzeumlubelskie.pl</item>
+
+        <item>https://lublin.eu/turystyka/zwiedzaj-lublin/najwieksze-atrakcje-lublina/wieza-trynitarska,8412,w.html</item>
+        <item>81 444 74 50</item>
+        <item>turystyka@lublin.eu</item>
+
+        <item> https://lublin.eu/mieszkancy/srodowisko/zielony-lublin/parki-w-lublinie/ogrod-saski</item>
+        <item>81 444 74 50</item>
+        <item>turystyka@lublin.eu</item>
+
+        <item>https://skansen.lublin.pl/pl/</item>
+        <item>815338513</item>
+        <item>skansen@skansen.lublin.pl</item>
+
+    </string-array>
+
+    <string-array name="hotel_contact">
+
+        <item>http://agit.com.pl/</item>
+        <item>721 103 300</item>
+        <item>RECEPCJA@AGIT.COM.PL</item>
+
+        <item>http://www.hotelalter.pl/</item>
+        <item>+48 81 516 90 90</item>
+        <item>recepcja@hotelalter.pl</item>
+
+        <item>http://www.hotel-lwow.pl/browar/</item>
+        <item>+48 81 7455709</item>
+        <item>lwow@lwow.lublin.pl</item>
+
+        <item>https://www.campanile.com/pl/hotels/campanile-lublin</item>
+        <item>+48 81 531 84 00 </item>
+        <item>lublin@campanile.com</item>
+
+        <item>http://www.hoteleuropa.pl/</item>
+        <item>+48 81 535 03 03</item>
+        <item>rezerwacja@hoteleuropa.pl</item>
+
+        <item>http://www.hotelgrodzka20.pl/</item>
+        <item>+48 505 385 844</item>
+        <item>hotel@hotelgrodzka20.pl</item>
+
+        <item>https://www.lublinianka.com/</item>
+        <item>+48 81 44 66 100</item>
+        <item>grandhotel@lublinianka.com</item>
+
+        <item>https://www.hotelilan.pl/</item>
+        <item>81 745 03 47</item>
+        <item>recepcja@hotelilan.pl</item>
+
+
+        <item>http://www.vanilla-hotel.pl/index.php/pl/home/</item>
+        <item>+48 81 44 00 374</item>
+        <item>info@vanilla-hotel.pl</item>
+
+        <item>http://www.hotelwieniawski.pl/</item>
+        <item>+48 515 595 507</item>
+        <item>info@hotelwieniawski.pl</item>
+
+    </string-array>
+
+    <string-array name="restaurant_contact">
+
+        <item>http://16stolow.pl/</item>
+        <item>81 534 30 40</item>
+        <item>biuro@16stolow.pl</item>
+
+        <item>http://www.lodybosko.pl/</item>
+        <item>535 212 844 </item>
+        <item>lublin@lodybosko.pl</item>
+
+        <item>http://www.grodzka15.pl/</item>
+        <item>607-756-576</item>
+        <item>restauracja@grodzka15.pl</item>
+
+        <item>http://czarcialapa.squarespace.com/</item>
+        <item>+48 81 532 82 00</item>
+        <item>info@czarcia.pl</item>
+
+        <item>http://www.mandragora.lublin.pl/</item>
+        <item>+48 81 536 20 20 </item>
+        <item>mandragorapub@wp.pl</item>
+
+        <item>http://www.miedzy-slowami.com.pl/</item>
+        <item>kontakt@miedzy-slowami.com.pl</item>
+        <item>508 217 014</item>
+
+        <item>http://perla.pl/pijalnia-piwa/</item>
+        <item>81 71 01 205</item>
+        <item>grzegorz.tomczyk@biuro.perla.pl</item>
+
+        <item>http://www.stoliwol.pl/</item>
+        <item>stoliwol@gmail.com</item>
+        <item>+48 81 565 55 55</item>
+
+        <item>http://pubregionalny.pl/</item>
+        <item>KONTAKT@PUBREGIONALNY.PL</item>
+        <item>789 057 658</item>
+
+        <item>http://www.trybunalska.pl/restauracja</item>
+        <item>81 532-40-65</item>
+        <item>info@trybunalska.pl</item>
+
     </string-array>
 
 

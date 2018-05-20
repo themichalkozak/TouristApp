@@ -44,6 +44,7 @@ public class HistoricalFragment extends Fragment {
 
         String historicalArray [] = getResources().getStringArray(R.array.historicalObjectName);
         String descriptionArray [] = getResources().getStringArray(R.array.monument_description);
+        String contactArray [] = getResources().getStringArray(R.array.monument_contact);
 
         TypedArray imgs = getResources().obtainTypedArray(R.array.historicalDrawableID);
         int lenDrawableArray = imgs.length();
@@ -61,7 +62,7 @@ public class HistoricalFragment extends Fragment {
 
         for(int i=0;i<lenDrawableArray;i++){
 
-            listElements.add(new ListElements(historicalArray[i],historicalDrawableId[i],descriptionArray[i],"https://www.youtube.com/","731660735","themichalkozak@gmail.com"));
+            listElements.add(new ListElements(historicalArray[i],historicalDrawableId[i],descriptionArray[i],contactArray[i],contactArray[i+1],contactArray[i+2]));
         }
 
 

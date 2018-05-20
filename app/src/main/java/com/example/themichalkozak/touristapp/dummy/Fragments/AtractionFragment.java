@@ -67,6 +67,8 @@ public class AtractionFragment extends Fragment {
         int attractionArray []= new int [lenImageArray];
         String attractionNameArray [] = getResources().getStringArray(R.array.attractionName);
         String descriptionArray [] = getResources().getStringArray(R.array.monument_description);
+        String contactArray [] = getResources().getStringArray(R.array.atraction_contact);
+        Log.i("contact Array", contactArray[5] + "");
 
         for (int i=0;i<lenImageArray;i++){
             attractionArray[i] = imgs.getResourceId(i,0);
@@ -76,7 +78,8 @@ public class AtractionFragment extends Fragment {
 
         for(int i=0;i<lenImageArray;i++) {
 
-            listElements.add(new ListElements(attractionNameArray[i],attractionArray[i],descriptionArray[i]));
+            listElements.add(new ListElements(attractionNameArray[i],attractionArray[i],descriptionArray[i],contactArray[i].toString(),contactArray[i+1].toString(),contactArray[i+2].toString()));
+            //listElements.add(new ListElements(attractionNameArray[i],attractionArray[i],descriptionArray[i],"http://www.mosir.lublin.pl/obiekty/aqua-lublin","81 466 51 01","osrodek@mosik.lubli.pl"));
 
         }
 
