@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -15,7 +16,7 @@ import android.support.v7.app.AppCompatActivity;
 
 public class ListActivity extends AppCompatActivity {
 
-    FragmentPagerAdapter adapterViewPager;
+    FragmentStatePagerAdapter adapterViewPager;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

@@ -60,9 +60,10 @@ public class HistoricalFragment extends Fragment {
 
         imgs.recycle();
 
-        for(int i=0;i<lenDrawableArray;i++){
+        for(int j=0;j<lenDrawableArray;j++){
 
-            listElements.add(new ListElements(historicalArray[i],historicalDrawableId[i],descriptionArray[i],contactArray[i],contactArray[i+1],contactArray[i+2]));
+            listElements.add(new ListElements(historicalArray[j],historicalDrawableId[j],descriptionArray[j],
+                    contactArray[3*j],contactArray[3*j+1],contactArray[3*j+2]));
         }
 
 

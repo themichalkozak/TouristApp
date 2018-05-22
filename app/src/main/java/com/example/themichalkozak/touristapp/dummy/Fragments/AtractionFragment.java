@@ -76,10 +76,10 @@ public class AtractionFragment extends Fragment {
         imgs.recycle();
 
 
-        for(int i=0;i<lenImageArray;i++) {
+        for(int j=0;j<lenImageArray;j++) {
 
-            listElements.add(new ListElements(attractionNameArray[i],attractionArray[i],descriptionArray[i],contactArray[i].toString(),contactArray[i+1].toString(),contactArray[i+2].toString()));
-            //listElements.add(new ListElements(attractionNameArray[i],attractionArray[i],descriptionArray[i],"http://www.mosir.lublin.pl/obiekty/aqua-lublin","81 466 51 01","osrodek@mosik.lubli.pl"));
+            listElements.add(new ListElements(attractionNameArray[j],attractionArray[j],descriptionArray[j],
+                    contactArray[3*j],contactArray[(3*j)+1],contactArray[(3*j)+2]));
 
         }
 

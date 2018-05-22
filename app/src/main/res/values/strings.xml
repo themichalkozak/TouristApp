@@ -112,7 +112,6 @@ W okresie powojennym, gdy plac nosił imię Józefa Stalina, na jego środku pos
         <item>@string/noc_kultury</item>
         <item>@string/wrotkarnia</item>
         <item>@string/sloneczny_wrotkow</item>
-        <item>@string/fontanna</item>
 
     </string-array>
 
@@ -212,6 +211,7 @@ W okresie powojennym, gdy plac nosił imię Józefa Stalina, na jego środku pos
         <item>http://www.mosir.lublin.pl/obiekty/sloneczny-wrotkow</item>
         <item>724 990 773</item>
         <item>wioslo@mosir.lublin.pl</item>
+
     </string-array>
 
     <string-array name="monument_contact">
@@ -314,7 +314,7 @@ W okresie powojennym, gdy plac nosił imię Józefa Stalina, na jego środku pos
         <item>lublin@lodybosko.pl</item>
 
         <item>http://www.grodzka15.pl/</item>
-        <item>607-756-576</item>
+        <item>607 756 576</item>
         <item>restauracja@grodzka15.pl</item>
 
         <item>http://czarcialapa.squarespace.com/</item>

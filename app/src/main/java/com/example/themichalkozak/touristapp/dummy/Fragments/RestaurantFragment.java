@@ -53,9 +53,9 @@ public class RestaurantFragment extends Fragment {
         }
         imgs.recycle();
 
-        for(int i=0;i<lenRestaurantArray;i++){
-            listElements.add(new ListElements(restaurantName[i],restaurantDrawableId[i],descriptionArray[i],
-                    contactArray[i],contactArray[i+1],contactArray[i+2]));
+        for(int j=0;j<lenRestaurantArray;j++){
+            listElements.add(new ListElements(restaurantName[j],restaurantDrawableId[j],descriptionArray[j],
+                    contactArray[0],contactArray[1],contactArray[2]));
         }
 
         ElementAdapter elementAdapter  = new ElementAdapter(getActivity(),listElements);

@@ -57,7 +57,7 @@ public class HotelFragment extends Fragment {
 
         for(int i =0;i<lenDrawableId;i++){
             listElements.add(new ListElements(hotelName[i],hotelDrawableId[i],descriptionArray[i],
-                    contactArray[i],contactArray[i+1],contactArray[i+2]));
+                    contactArray[3*i],contactArray[3*i+1],contactArray[3*i+2]));
         }
 
         imgs.recycle();

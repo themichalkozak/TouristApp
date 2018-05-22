@@ -6,6 +6,7 @@ import android.media.AudioManager;
 import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -24,10 +26,9 @@ import java.util.ArrayList;
 public class ElementAdapter extends ArrayAdapter<ListElements> {
 
 
-    String urlweb;
-    String telefon;
-    String email;
-    View listItemView;
+    private String urlweb;
+    private String telefon;
+    private String email;
 
 
     public ElementAdapter(Context context, ArrayList<ListElements> elements) {
@@ -36,9 +37,9 @@ public class ElementAdapter extends ArrayAdapter<ListElements> {
 
     @NonNull
     @Override
-    public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
+    public View getView(final int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        listItemView = convertView;
+        View listItemView = convertView;
         if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.artifact_layout, parent, false);
@@ -85,6 +86,7 @@ public class ElementAdapter extends ArrayAdapter<ListElements> {
             switch (v.getId()){
                 case R.id.list_item_web:
                     Intent webIntent = new Intent(Intent.ACTION_VIEW,Uri.parse(urlweb));
+                    Log.i("URL web link","" + urlweb);
                     getContext().startActivity(webIntent);
                     break;
                 case R.id.list_item_telefon:

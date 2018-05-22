@@ -3,6 +3,7 @@ package com.example.themichalkozak.touristapp;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
+import android.support.v4.app.FragmentStatePagerAdapter;
 
 import com.example.themichalkozak.touristapp.dummy.Fragments.AtractionFragment;
 import com.example.themichalkozak.touristapp.dummy.Fragments.HistoricalFragment;
@@ -13,7 +14,7 @@ import com.example.themichalkozak.touristapp.dummy.Fragments.RestaurantFragment;
  * Created by themichalkozak on 09/05/2018.
  */
 
-public class MyPagerAdapter extends FragmentPagerAdapter {
+public class MyPagerAdapter extends FragmentStatePagerAdapter {
 
     public MyPagerAdapter(FragmentManager fm) {
         super(fm);

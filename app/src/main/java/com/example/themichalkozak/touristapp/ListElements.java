@@ -13,11 +13,6 @@ public class ListElements {
     private String mTelefon;
     private String mEmailAdress;
 
-    public ListElements(String mName, int mImageResourceId, String mDescription) {
-        this.mName = mName;
-        this.mImageResourceId = mImageResourceId;
-        this.mDescription =mDescription;
-    }
 
     public ListElements(String mName, int mImageResourceId, String mDescription,String siteURL,String mTelefon,String mEmailAdress) {
         this.mName = mName;
